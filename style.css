@@ -49,7 +49,6 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
-    
 }
 
 body {
@@ -57,8 +56,8 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
-    overflow-x: hidden;
     transition: background-color 0.3s ease, color 0.3s ease;
+    overflow-x: hidden;
 }
 
 .text-primary {
@@ -376,9 +375,87 @@ body {
 }
 
 
+/* ******************************************  About  *********************************************/
 
+.section-padding {
+    padding: 20px 0;
+}
 
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
 
+.section-divider {
+    width: 150px;
+    height: 4px;
+    background: var(--primary-color);
+    border-radius: 2px;
+}
+
+#about{
+    background-color: var(--surface-color);
+}
+
+.about-image {
+    width: 550px;
+    height: 365px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-stat {
+    height: 100%;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    text-align: center;
+    padding: 1.25rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-base);
+}
+
+.about-stat:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.state_icon{
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background: rgba(0, 255, 136, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00ff88;
+    font-size: 28px;
+
+}
+
+.stat-number {
+    color: var(--text-color);
+    display: block;
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+.about-stat p {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
 
 
 
@@ -429,7 +506,7 @@ body {
 
 @media (max-width: 991.98px) {
     .offcanvas {
-        max-width: 20%;
+        max-width: 4rem;
         background-color: var(--bg-color);
     }
 
@@ -448,11 +525,29 @@ body {
     .hero-content p {
         width: 70%;
     }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .about-image,
+    .about-decoration {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-decoration {
+        left: calc(50% - 80px);
+    }
+
+    .about-image i {
+        font-size: 6rem;
+    }
 }
 
 
 @media (max-width: 767.98px) {
-        .section-padding {
+    .section-padding {
         padding: 22px 0;
     }
 
@@ -497,6 +592,11 @@ body {
 
     .status-info .vr {
         display: none;
+    }
+
+    .about-image {
+        width: 550px;
+        height: 400px;
     }
 }
 

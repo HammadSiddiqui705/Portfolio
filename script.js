@@ -10,6 +10,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
+    // Scroll navigation
+    const navbar = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
+
     // Dark mode Toggle
     const themeToggles = document.querySelectorAll('.themeToggle');
     const html = document.documentElement;
@@ -57,4 +69,9 @@ document.addEventListener('DOMContentLoaded', function () {
             setTheme(e.matches ? 'dark' : 'light');
         }
     });
+
+
+
+
+// jhfghgh
 });
