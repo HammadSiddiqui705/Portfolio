@@ -391,7 +391,7 @@ html:has([data-aos]), body:has([data-aos]) {
 }
 
 .section-divider {
-    width: 150px;
+    width:85px;
     height: 4px;
     background: var(--primary-color);
     border-radius: 2px;
@@ -532,11 +532,6 @@ html:has([data-aos]), body:has([data-aos]) {
   color: #fff;
 }
 
-.section-title {
-  text-align: center;
-  font-size: 40px;
-  font-weight: 700;
-}
 
 .section-subtitle {
   text-align: center;
@@ -594,8 +589,7 @@ html:has([data-aos]), body:has([data-aos]) {
 .edu-right {
   width: 65%;
   padding: 30px;
-  display: flex;
-  align-items: center;
+
 }
 
 .edu-right p {
@@ -612,6 +606,7 @@ html:has([data-aos]), body:has([data-aos]) {
   .edu-left,
   .edu-right {
     width: 100%;
+    padding: 20px;
   }
 }
 
@@ -619,7 +614,16 @@ html:has([data-aos]), body:has([data-aos]) {
 
 
 
+@media (max-width: 767px) {
+    .edu-icon {
+        margin-bottom: 0.5rem;
+    }
 
+    .edu-card {
+  width: 100%;
+  
+}
+}
 
 
 
