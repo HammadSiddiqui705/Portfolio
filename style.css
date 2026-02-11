@@ -75,6 +75,10 @@ html:has([data-aos]), body:has([data-aos]) {
     background-color: var(--surface-color);
 }
 
+.text-color {
+  color: var(--text-color);
+}
+
 
 /* ******************************************  Navigation Bar  *********************************************/
 
@@ -465,34 +469,43 @@ html:has([data-aos]), body:has([data-aos]) {
 /* **********************************************  Education Section  *************************************************** */
 
 .education-section {
-  background: radial-gradient(circle at top, #0d1b2a, #020617);
+  background-color: var(--bg-color);
+  padding: 80px 20px;
 }
 
 
 .edu-card {
   width: 80%;
-  background: rgba(255, 255, 255, 0.04);
+  display: flex;
+  background: var(--card-bg);
   border-radius: 16px;
-  margin: auto;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  margin: auto;  
+  margin-bottom: 24px;
   overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
 }
 
 .edu-left {
-  background: linear-gradient(135deg, #0b2a2f, #062026);
+  width: 35%;
+  padding: 30px;
+  background-color: #E0F1E7;
 }
+
 
 .edu-icon {
   width: 50px;
   height: 50px;
   border-radius: 12px;
-  background: rgba(34, 197, 94, 0.15);
-  color: #22c55e;
+  background: #0E3332;
+  color: #00ff88;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 22px;
+  border-radius: 10px;
 }
+
 
 .edu-date {
   color: #22c55e;
@@ -526,48 +539,16 @@ html:has([data-aos]), body:has([data-aos]) {
 
 
 
-.education-section {
-  background: #020b1a;
-  padding: 80px 20px;
-  color: #fff;
-}
 
 
-.section-subtitle {
-  text-align: center;
-  color: #9aa4b2;
-  margin-bottom: 50px;
-}
 
-.edu-card {
-  display: flex;
-  background: linear-gradient(180deg, #061426, #04101f);
-  border-radius: 16px;
-  margin-bottom: 24px;
-  overflow: hidden;
-}
 
-.edu-left {
-  width: 35%;
-  padding: 30px;
-  background: rgba(0, 255, 150, 0.04);
-}
 
-.edu-icon {
-  width: 42px;
-  height: 42px;
-  background: #0be881;
-  color: #022;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  font-size: 18px;
-}
 
 .edu-left h3 {
   font-size: 20px;
-}
+  font-weight: 600;
+} 
 
 .edu-school,
 .edu-date {
@@ -592,10 +573,6 @@ html:has([data-aos]), body:has([data-aos]) {
 
 }
 
-.edu-right p {
-  color: #bfc7d5;
-  line-height: 1.7;
-}
 
 /* Responsive */
 @media (max-width: 768px) {
